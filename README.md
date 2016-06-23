@@ -1,9 +1,9 @@
-# jade-filter-markdown
+# pug-filter-markdown
 
 Implement parsers from https://github.com/cebe/markdown to make **markdown**
-available as a jade-php filter.
+available as a Pug-php filter.
 
-```jade
+```pug
 section
   :markdown
     ![example image](example-image.jpg "An exemplary image")

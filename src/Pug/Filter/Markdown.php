@@ -1,12 +1,13 @@
 <?php
 
-namespace Jade\Filter;
+namespace Pug\Filter;
 
 use Jade\Compiler;
+use Jade\Filter\AbstractFilter;
 use Jade\Nodes\Filter;
-use cebe\markdown\GithubMarkdown as Parser;
+use cebe\markdown\Markdown as Parser;
 
-class GithubMarkdown extends AbstractFilter
+class Markdown extends AbstractFilter
 {
     public function __invoke(Filter $node, Compiler $compiler)
     {

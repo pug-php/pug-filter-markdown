@@ -1,6 +1,9 @@
 {
-    "name": "kylekatarnls/jade-filter-markdown",
-    "description": "Markdown filter for Jade-php",
+    "name": "pug-php/pug-filter-markdown",
+    "replace": {
+        "kylekatarnls/jade-filter-markdown": "self.version"
+    },
+    "description": "Markdown filter for Pug-php",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,7 +14,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "kylekatarnls/jade-php": "^1.9",
+        "pug-php/pug": "^1.11",
         "cebe/markdown": "^1.1"
     },
     "require-dev": {
@@ -19,7 +22,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Jade": "src/"
+            "Pug": "src/"
         }
     }
 }
