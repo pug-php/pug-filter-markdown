@@ -1,8 +1,9 @@
 <?php
 
-namespace Jade\Filter;
+namespace Pug\Filter;
 
 use Jade\Compiler;
+use Jade\Filter\AbstractFilter;
 use Jade\Nodes\Filter;
 use cebe\markdown\MarkdownExtra as Parser;
 
