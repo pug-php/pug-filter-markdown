@@ -2,10 +2,10 @@
 
 namespace Pug\Filter;
 
+use cebe\markdown\MarkdownExtra as Parser;
 use Jade\Compiler;
 use Jade\Filter\AbstractFilter;
 use Jade\Nodes\Filter;
-use cebe\markdown\MarkdownExtra as Parser;
 
 class MarkdownExtra extends AbstractFilter
 {
