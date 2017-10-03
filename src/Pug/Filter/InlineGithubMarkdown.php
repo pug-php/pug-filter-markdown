@@ -3,16 +3,13 @@
 namespace Pug\Filter;
 
 use cebe\markdown\GithubMarkdown as Parser;
-use Jade\Compiler;
-use Jade\Filter\AbstractFilter as JadeAbstractFilter;
-use Jade\Nodes\Filter;
 
-class InlineGithubMarkdown extends JadeAbstractFilter
+class InlineGithubMarkdown extends AbstractFilter
 {
-    public function __invoke(Filter $node, Compiler $compiler)
+    public function parse($code)
     {
         $parser = new Parser();
 
-        return $parser->parseParagraph($this->getNodeString($node, $compiler));
+        return $parser->parseParagraph($code);
     }
 }
